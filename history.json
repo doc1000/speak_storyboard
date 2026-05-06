@@ -127,6 +127,24 @@
           "image_url": "/img/web/web_1778104499_c2_checkbook_3ac76e3dc0.png"
         }
       ]
+    },
+    {
+      "source_id": "web_1778106794",
+      "original_text": "Grandma did you take the medication I set out",
+      "simplified_message": "Did Grandma take her medication?",
+      "created_at": 1778106804,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Grandma with medication",
+          "image_url": "/img/web/web_1778106794_c1_grandma-with-medication_b3dcc8f8f7.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Grandma taking medication",
+          "image_url": "/img/web/web_1778106794_c2_grandma-taking-medication_4f26fcd97b.png"
+        }
+      ]
     }
   ]
 }

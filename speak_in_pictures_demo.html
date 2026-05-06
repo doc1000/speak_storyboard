@@ -44,10 +44,13 @@
 
     .controls {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr auto auto auto;
       gap: 12px;
       margin-bottom: 16px;
     }
+
+    #micBtn { font-size: 20px; padding: 8px 12px; cursor: pointer; }
+    .speech-status { font-size: 13px; color: #666; align-self: center; }
 
     textarea {
       font-size: 18px;
@@ -349,6 +352,8 @@
       <div class="controls">
         <textarea id="phraseInput" aria-label="Caregiver phrase">Gramma, we have to pay the lawn guy for mowing the lawn. Let's write a check for $50. Where is your checkbook?</textarea>
         <button onclick="generateStoryboard()">Make Storyboard</button>
+        <button id="micBtn" onclick="startSpeech()" title="Speak phrase">🎙</button>
+        <span id="speechStatus" class="speech-status"></span>
       </div>
 
       <div id="quickButtons" class="quick-buttons"></div>
@@ -787,6 +792,39 @@
 
     _generateStoryboardOffline(); // immediate emoji fallback while history loads
     loadHistory();               // async — renders gallery and real PNG cards when server responds
+
+    function startSpeech() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const status = document.getElementById('speechStatus');
+
+      if (!SpeechRecognition) {
+        status.textContent = 'Speech not supported in this browser.';
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.continuous = false;
+
+      recognition.onstart = () => { status.textContent = 'Listening...'; };
+
+      recognition.onresult = (event) => {
+        status.textContent = 'Heard speech.';
+        document.getElementById('phraseInput').value = event.results[0][0].transcript;
+        generateStoryboard();
+      };
+
+      recognition.onerror = (event) => {
+        status.textContent = 'Error: ' + event.error;
+      };
+
+      recognition.onend = () => {
+        if (status.textContent === 'Listening...') status.textContent = '';
+      };
+
+      recognition.start();
+    }
   </script>
 </body>
 </html>
