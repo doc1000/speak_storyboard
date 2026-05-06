@@ -130,6 +130,22 @@
       margin-top: 18px;
     }
 
+    .panel-img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      max-height: 210px;
+      margin: 10px 0;
+    }
+
+    .activity-thumb {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 80px;
+      object-fit: cover;
+      margin-bottom: 4px;
+    }
+
     .caption {
       font-size: 23px;
       font-weight: bold;
@@ -288,13 +304,7 @@
         <button onclick="generateStoryboard()">Make Storyboard</button>
       </div>
 
-      <div class="quick-buttons">
-        <button onclick="setPhrase('Gramma, we have to pay the lawn guy for mowing the lawn. Let\'s write a check for $50. Where is your checkbook?')">Pay lawn guy</button>
-        <button onclick="setPhrase('Do you want lunch?')">Lunch?</button>
-        <button onclick="setPhrase('The plumber is coming. We need to go to the kitchen.')">Plumber coming</button>
-        <button onclick="setPhrase('It is time to take your medicine with water.')">Medicine</button>
-        <button onclick="setPhrase('We are going to the car now. Please bring your coat.')">Go to car</button>
-      </div>
+      <div id="quickButtons" class="quick-buttons"></div>
 
       <div id="meaning" class="meaning-box"></div>
       <div id="storyboard" class="storyboard"></div>
@@ -339,6 +349,90 @@
   <script>
     let currentScenario = null;
     let activityCounter = 0;
+    let historyItems = [];
+
+    // --- History loading and rendering ---
+
+    async function loadHistory() {
+      try {
+        const res = await fetch('/api/history');
+        if (!res.ok) return;
+        const data = await res.json();
+        historyItems = data.items || [];
+        buildHistoryChips();
+        if (historyItems.length > 0) {
+          renderFromHistory(historyItems[0]);
+        }
+        // Re-seed activities with real image cards now that history is loaded
+        document.getElementById('savedActivities').innerHTML = '';
+        seedActivities();
+      } catch (e) {
+        // Server not reachable — emoji fallback already shown by _generateStoryboardOffline()
+      }
+    }
+
+    function buildHistoryChips() {
+      const row = document.getElementById('quickButtons');
+      row.innerHTML = '';
+      historyItems.slice(0, 10).forEach(item => {
+        const label = item.original_text.length > 30
+          ? item.original_text.slice(0, 27) + '\u2026'
+          : item.original_text;
+        const btn = document.createElement('button');
+        btn.textContent = label;
+        btn.onclick = () => renderFromHistory(item);
+        row.appendChild(btn);
+      });
+    }
+
+    function renderFromHistory(item) {
+      document.getElementById('phraseInput').value = item.original_text;
+      document.getElementById('meaning').innerHTML = `
+        <strong>Simplified meaning:</strong>
+        ${item.simplified_message}
+      `;
+      // Keep currentScenario compatible with saveCurrentActivity
+      currentScenario = {
+        activityEmoji: '🖼️',
+        activityLabel: (item.simplified_message || item.original_text).slice(0, 30),
+        panels: item.cards.map(c => ({ emoji: '🖼️', caption: c.scene_label, spoken: '' })),
+        choices: []
+      };
+      renderPanels(item.cards, {source_id: item.source_id, label: item.simplified_message || item.original_text});
+      document.getElementById('choices').innerHTML = '';
+    }
+
+    function renderPanels(cards, dragContext) {
+      const storyboard = document.getElementById('storyboard');
+      const cols = Math.min(Math.max(cards.length, 1), 4);
+      storyboard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+      storyboard.innerHTML = '';
+      cards.forEach((card, index) => {
+        const div = document.createElement('div');
+        div.className = 'panel';
+        if (dragContext) {
+          div.draggable = true;
+          div.style.cursor = 'grab';
+          const payload = JSON.stringify({
+            source_id: dragContext.source_id,
+            image_url: card.image_url || null,
+            label: dragContext.label,
+          });
+          div.addEventListener('dragstart', e => {
+            e.dataTransfer.setData('application/json', payload);
+          });
+        }
+        const sceneHtml = card.image_url
+          ? `<img src="${card.image_url}" alt="${card.scene_label}" class="panel-img" draggable="false">`
+          : `<div class="scene">${card.emoji || '🖼\uFE0F'}</div>`;
+        div.innerHTML = `
+          <div class="step">Step ${index + 1}</div>
+          ${sceneHtml}
+          <div class="caption">${card.scene_label || card.caption || ''}</div>
+        `;
+        storyboard.appendChild(div);
+      });
+    }
 
     const visualVocabulary = {
       lawn: { emoji: '🌱🏡', label: 'Lawn was mowed' },
@@ -472,7 +566,45 @@
       };
     }
 
-    function generateStoryboard() {
+    async function generateStoryboard() {
+      const rawText = document.getElementById('phraseInput').value.trim();
+      if (!rawText) return;
+
+      document.getElementById('meaning').innerHTML = `
+        <strong>Generating storyboard\u2026</strong>
+        <span style="color:#888;display:block;margin-top:4px">Calling AI and generating images — this may take 20\u201330 seconds.</span>
+      `;
+      document.getElementById('storyboard').innerHTML = '';
+      document.getElementById('choices').innerHTML = '';
+
+      let data;
+      try {
+        const res = await fetch('/api/generate', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({text: rawText}),
+        });
+        data = await res.json();
+        if (!res.ok) {
+          document.getElementById('meaning').innerHTML = `
+            <strong style="color:#c00">Error:</strong> ${data.error || 'Unknown error from server.'}
+          `;
+          return;
+        }
+      } catch (e) {
+        document.getElementById('meaning').innerHTML = `
+          <strong style="color:#c00">Error:</strong> Could not reach server. ${e.message}
+        `;
+        return;
+      }
+
+      // Render and prepend to history
+      renderFromHistory(data);
+      historyItems.unshift(data);
+      buildHistoryChips();
+    }
+
+    function _generateStoryboardOffline() {
       const rawText = document.getElementById('phraseInput').value.trim();
       const text = rawText.toLowerCase();
       const scenario = scenarioRules.find(rule => rule.test(text)) || buildDynamicFallback(rawText);
@@ -513,8 +645,11 @@
       card.id = activity.id;
       card.draggable = true;
       card.ondragstart = dragActivity;
+      const thumbHtml = activity.image_url
+        ? `<img src="${activity.image_url}" alt="${activity.label}" class="activity-thumb" draggable="false">`
+        : `<div class="activity-emoji">${activity.emoji || '🖼\uFE0F'}</div>`;
       card.innerHTML = `
-        <div class="activity-emoji">${activity.emoji}</div>
+        ${thumbHtml}
         <div class="activity-label">${activity.label}</div>
       `;
       return card;
@@ -532,7 +667,7 @@
     }
 
     function dragActivity(event) {
-      event.dataTransfer.setData('text/plain', event.target.id);
+      event.dataTransfer.setData('text/plain', event.currentTarget.id);
     }
 
     function allowDrop(event) {
@@ -549,10 +684,29 @@
       event.preventDefault();
       const target = document.getElementById(targetId);
       target.classList.remove('drag-over');
+
+      // Panel drag — payload is JSON with {source_id, image_url, label}
+      const jsonPayload = event.dataTransfer.getData('application/json');
+      if (jsonPayload) {
+        let payload;
+        try { payload = JSON.parse(jsonPayload); } catch (e) { return; }
+        activityCounter += 1;
+        const activity = {
+          id: 'activity-' + activityCounter,
+          image_url: payload.image_url || null,
+          emoji: '🖼\uFE0F',
+          label: (payload.label || 'Activity').slice(0, 25),
+        };
+        const helper = target.querySelector('.slot-help');
+        if (helper) helper.style.display = 'none';
+        target.appendChild(createActivityCard(activity));
+        return;
+      }
+
+      // Activity-card drag — payload is element id string
       const cardId = event.dataTransfer.getData('text/plain');
       const card = document.getElementById(cardId);
       if (!card) return;
-
       const helper = target.querySelector('.slot-help');
       if (helper) helper.style.display = 'none';
       target.appendChild(card);
@@ -570,17 +724,30 @@
     }
 
     function seedActivities() {
-      const starterActivities = [
-        { id: 'activity-seed-1', emoji: '🍲❓', label: 'Lunch' },
-        { id: 'activity-seed-2', emoji: '💊🥤', label: 'Medicine' },
-        { id: 'activity-seed-3', emoji: '🚗', label: 'Car ride' }
-      ];
       const saved = document.getElementById('savedActivities');
-      starterActivities.forEach(activity => saved.appendChild(createActivityCard(activity)));
+      if (historyItems.length > 0) {
+        historyItems.slice(0, 3).forEach((item, i) => {
+          const firstCard = item.cards[0] || {};
+          saved.appendChild(createActivityCard({
+            id: `activity-seed-${i + 1}`,
+            image_url: firstCard.image_url || null,
+            emoji: '🖼\uFE0F',
+            label: (item.simplified_message || item.original_text).slice(0, 25),
+          }));
+        });
+      } else {
+        // Fallback before history loads
+        [
+          { id: 'activity-seed-1', emoji: '🍲❓', label: 'Lunch' },
+          { id: 'activity-seed-2', emoji: '💊🥤', label: 'Medicine' },
+          { id: 'activity-seed-3', emoji: '🚗', label: 'Car ride' },
+        ].forEach(a => saved.appendChild(createActivityCard(a)));
+      }
     }
 
-    generateStoryboard();
+    _generateStoryboardOffline(); // immediate emoji fallback while history loads
     seedActivities();
+    loadHistory();               // async — replaces view with real PNG cards when server responds
   </script>
 </body>
 </html>
