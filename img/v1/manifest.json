@@ -1,0 +1,330 @@
+{
+  "created_at": 1778088277,
+  "items": [
+    {
+      "source_id": "lunch_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p1_it-s-lunchtime_5d60c7b405.png",
+      "output_file_relative": "img\\lunch_01_p1_it-s-lunchtime_5d60c7b405.png",
+      "filename": "lunch_01_p1_it-s-lunchtime_5d60c7b405.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch? Soup or cottage cheese and peaches?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show context of lunch choice and food options clearly.",
+      "panel": {
+        "panel_index": 1,
+        "role": "context",
+        "short_caption": "It's lunchtime.",
+        "visual_elements": [
+          "person",
+          "table",
+          "clock"
+        ],
+        "composition_hint": "Center the person and table, include a clock in the background.",
+        "prompt_fragment": "Person at a table with a clock showing lunch time.",
+        "avoid": [
+          "small details",
+          "multiple objects",
+          "text labels"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch? Soup or cottage cheese and peaches?\nIntent type: choice_question\nStoryboard strategy: Show context of lunch choice and food options clearly.\n\nPanel goal: It's lunchtime.\nKey visual elements: person, table, clock\nComposition: Center the person and table, include a clock in the background.\nImage request: Person at a table with a clock showing lunch time.\nAvoid: small details, multiple objects, text labels",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "lunch_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p2_soup_38edf8145d.png",
+      "output_file_relative": "img\\lunch_01_p2_soup_38edf8145d.png",
+      "filename": "lunch_01_p2_soup_38edf8145d.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch? Soup or cottage cheese and peaches?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show context of lunch choice and food options clearly.",
+      "panel": {
+        "panel_index": 2,
+        "role": "choice",
+        "short_caption": "Soup.",
+        "visual_elements": [
+          "bowl",
+          "soup"
+        ],
+        "composition_hint": "Place the bowl of soup prominently in the center.",
+        "prompt_fragment": "A big bowl of soup.",
+        "avoid": [
+          "small bowl",
+          "text labels"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch? Soup or cottage cheese and peaches?\nIntent type: choice_question\nStoryboard strategy: Show context of lunch choice and food options clearly.\n\nPanel goal: Soup.\nKey visual elements: bowl, soup\nComposition: Place the bowl of soup prominently in the center.\nImage request: A big bowl of soup.\nAvoid: small bowl, text labels",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "lunch_01",
+      "panel_index": 3,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p3_cottage-cheese-and-peaches_153e3f9c93.png",
+      "output_file_relative": "img\\lunch_01_p3_cottage-cheese-and-peaches_153e3f9c93.png",
+      "filename": "lunch_01_p3_cottage-cheese-and-peaches_153e3f9c93.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch? Soup or cottage cheese and peaches?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show context of lunch choice and food options clearly.",
+      "panel": {
+        "panel_index": 3,
+        "role": "choice",
+        "short_caption": "Cottage cheese and peaches.",
+        "visual_elements": [
+          "bowl",
+          "cottage cheese",
+          "peaches"
+        ],
+        "composition_hint": "Show the bowl with cottage cheese and peaches clearly in the center.",
+        "prompt_fragment": "A big bowl of cottage cheese and peaches.",
+        "avoid": [
+          "small details",
+          "text labels"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch? Soup or cottage cheese and peaches?\nIntent type: choice_question\nStoryboard strategy: Show context of lunch choice and food options clearly.\n\nPanel goal: Cottage cheese and peaches.\nKey visual elements: bowl, cottage cheese, peaches\nComposition: Show the bowl with cottage cheese and peaches clearly in the center.\nImage request: A big bowl of cottage cheese and peaches.\nAvoid: small details, text labels",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "lunch_01",
+      "panel_index": 4,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p4_what-do-you-choose_014d307689.png",
+      "output_file_relative": "img\\lunch_01_p4_what-do-you-choose_014d307689.png",
+      "filename": "lunch_01_p4_what-do-you-choose_014d307689.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch? Soup or cottage cheese and peaches?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show context of lunch choice and food options clearly.",
+      "panel": {
+        "panel_index": 4,
+        "role": "question_cue",
+        "short_caption": "What do you choose?",
+        "visual_elements": [
+          "question mark"
+        ],
+        "composition_hint": "Place a large question mark in the center.",
+        "prompt_fragment": "A big question mark for choice.",
+        "avoid": [
+          "crowded elements"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch? Soup or cottage cheese and peaches?\nIntent type: choice_question\nStoryboard strategy: Show context of lunch choice and food options clearly.\n\nPanel goal: What do you choose?\nKey visual elements: question mark\nComposition: Place a large question mark in the center.\nImage request: A big question mark for choice.\nAvoid: crowded elements",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p1_leaving-for-work_81c11d3d15.png",
+      "output_file_relative": "img\\return_01_p1_leaving-for-work_81c11d3d15.png",
+      "filename": "return_01_p1_leaving-for-work_81c11d3d15.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will return after work.",
+      "intent_type": "statement",
+      "summary_visual_strategy": "Show the sequence of leaving and returning home after work.",
+      "panel": {
+        "panel_index": 1,
+        "role": "action",
+        "short_caption": "Leaving for work.",
+        "visual_elements": [
+          "person",
+          "door"
+        ],
+        "composition_hint": "Show the person at the door ready to leave.",
+        "prompt_fragment": "A person at the door with a work bag.",
+        "avoid": [
+          "other people",
+          "distracting objects"
+        ]
+      },
+      "combined_prompt": "Overall message: I will return after work.\nIntent type: statement\nStoryboard strategy: Show the sequence of leaving and returning home after work.\n\nPanel goal: Leaving for work.\nKey visual elements: person, door\nComposition: Show the person at the door ready to leave.\nImage request: A person at the door with a work bag.\nAvoid: other people, distracting objects",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p2_at-work_736e78a99b.png",
+      "output_file_relative": "img\\return_01_p2_at-work_736e78a99b.png",
+      "filename": "return_01_p2_at-work_736e78a99b.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will return after work.",
+      "intent_type": "statement",
+      "summary_visual_strategy": "Show the sequence of leaving and returning home after work.",
+      "panel": {
+        "panel_index": 2,
+        "role": "time_cue",
+        "short_caption": "At work.",
+        "visual_elements": [
+          "building",
+          "workplace"
+        ],
+        "composition_hint": "Show a workplace building prominently.",
+        "prompt_fragment": "A workplace building.",
+        "avoid": [
+          "small details",
+          "unrelated objects"
+        ]
+      },
+      "combined_prompt": "Overall message: I will return after work.\nIntent type: statement\nStoryboard strategy: Show the sequence of leaving and returning home after work.\n\nPanel goal: At work.\nKey visual elements: building, workplace\nComposition: Show a workplace building prominently.\nImage request: A workplace building.\nAvoid: small details, unrelated objects",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 3,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p3_back-home_3c665df6a0.png",
+      "output_file_relative": "img\\return_01_p3_back-home_3c665df6a0.png",
+      "filename": "return_01_p3_back-home_3c665df6a0.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will return after work.",
+      "intent_type": "statement",
+      "summary_visual_strategy": "Show the sequence of leaving and returning home after work.",
+      "panel": {
+        "panel_index": 3,
+        "role": "return",
+        "short_caption": "Back home.",
+        "visual_elements": [
+          "person",
+          "home",
+          "door"
+        ],
+        "composition_hint": "Show the person entering home through the door.",
+        "prompt_fragment": "A person coming back home through the door.",
+        "avoid": [
+          "complex background",
+          "other distractions"
+        ]
+      },
+      "combined_prompt": "Overall message: I will return after work.\nIntent type: statement\nStoryboard strategy: Show the sequence of leaving and returning home after work.\n\nPanel goal: Back home.\nKey visual elements: person, home, door\nComposition: Show the person entering home through the door.\nImage request: A person coming back home through the door.\nAvoid: complex background, other distractions",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "bathroom_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\bathroom_01_p1_do-you-need-to-go_b02af4d02f.png",
+      "output_file_relative": "img\\bathroom_01_p1_do-you-need-to-go_b02af4d02f.png",
+      "filename": "bathroom_01_p1_do-you-need-to-go_b02af4d02f.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_text": "Do you need the bathroom?",
+      "intent_type": "yes_no_question",
+      "summary_visual_strategy": "Show context and a clear bathroom image for the question.",
+      "panel": {
+        "panel_index": 1,
+        "role": "context",
+        "short_caption": "Do you need to go?",
+        "visual_elements": [
+          "person",
+          "bathroom door"
+        ],
+        "composition_hint": "Show the person next to the bathroom door.",
+        "prompt_fragment": "A person standing near a bathroom door.",
+        "avoid": [
+          "cluttered background",
+          "multiple objects"
+        ]
+      },
+      "combined_prompt": "Overall message: Do you need the bathroom?\nIntent type: yes_no_question\nStoryboard strategy: Show context and a clear bathroom image for the question.\n\nPanel goal: Do you need to go?\nKey visual elements: person, bathroom door\nComposition: Show the person next to the bathroom door.\nImage request: A person standing near a bathroom door.\nAvoid: cluttered background, multiple objects",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "bathroom_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\bathroom_01_p2_yes-or-no_d6c075c39d.png",
+      "output_file_relative": "img\\bathroom_01_p2_yes-or-no_d6c075c39d.png",
+      "filename": "bathroom_01_p2_yes-or-no_d6c075c39d.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_text": "Do you need the bathroom?",
+      "intent_type": "yes_no_question",
+      "summary_visual_strategy": "Show context and a clear bathroom image for the question.",
+      "panel": {
+        "panel_index": 2,
+        "role": "question_cue",
+        "short_caption": "Yes or No?",
+        "visual_elements": [
+          "question mark"
+        ],
+        "composition_hint": "A large question mark to indicate the question.",
+        "prompt_fragment": "A big question mark close to the bathroom door.",
+        "avoid": [
+          "text labels",
+          "complex backgrounds"
+        ]
+      },
+      "combined_prompt": "Overall message: Do you need the bathroom?\nIntent type: yes_no_question\nStoryboard strategy: Show context and a clear bathroom image for the question.\n\nPanel goal: Yes or No?\nKey visual elements: question mark\nComposition: A large question mark to indicate the question.\nImage request: A big question mark close to the bathroom door.\nAvoid: text labels, complex backgrounds",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    }
+  ]
+}

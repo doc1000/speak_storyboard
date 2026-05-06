@@ -1,0 +1,312 @@
+{
+  "created_at": 1778089600,
+  "items": [
+    {
+      "source_id": "lunch_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p1_context_c1346c9dae.png",
+      "output_file_relative": "img\\lunch_01_p1_context_c1346c9dae.png",
+      "filename": "lunch_01_p1_context_c1346c9dae.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show a choice between two lunch options clearly.",
+      "panel": {
+        "panel_index": 1,
+        "role": "context",
+        "short_caption": "",
+        "visual_elements": [
+          "caregiver",
+          "older adult",
+          "table",
+          "lunch options"
+        ],
+        "composition_hint": "Caregiver and older adult seated at a table with visible lunch options.",
+        "prompt_fragment": "Caregiver and older adult sitting at a table with both lunch options.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch?\nIntent type: choice_question\nStoryboard strategy: Show a choice between two lunch options clearly.\n\nKey visual elements: caregiver, older adult, table, lunch options\nComposition: Caregiver and older adult seated at a table with visible lunch options.\nImage request: Caregiver and older adult sitting at a table with both lunch options.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "lunch_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p2_choice_65c3469cd6.png",
+      "output_file_relative": "img\\lunch_01_p2_choice_65c3469cd6.png",
+      "filename": "lunch_01_p2_choice_65c3469cd6.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show a choice between two lunch options clearly.",
+      "panel": {
+        "panel_index": 2,
+        "role": "choice",
+        "short_caption": "",
+        "visual_elements": [
+          "bowl of soup"
+        ],
+        "composition_hint": "Bowl of soup clearly shown on one side of the table.",
+        "prompt_fragment": "A bowl of soup on the table.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch?\nIntent type: choice_question\nStoryboard strategy: Show a choice between two lunch options clearly.\n\nKey visual elements: bowl of soup\nComposition: Bowl of soup clearly shown on one side of the table.\nImage request: A bowl of soup on the table.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "lunch_01",
+      "panel_index": 3,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p3_choice_9738ce3c15.png",
+      "output_file_relative": "img\\lunch_01_p3_choice_9738ce3c15.png",
+      "filename": "lunch_01_p3_choice_9738ce3c15.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show a choice between two lunch options clearly.",
+      "panel": {
+        "panel_index": 3,
+        "role": "choice",
+        "short_caption": "",
+        "visual_elements": [
+          "dish of cottage cheese",
+          "peach slices"
+        ],
+        "composition_hint": "Dish with cottage cheese and peach slices on the opposite side of the table.",
+        "prompt_fragment": "A dish of cottage cheese with peach slices on the table.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch?\nIntent type: choice_question\nStoryboard strategy: Show a choice between two lunch options clearly.\n\nKey visual elements: dish of cottage cheese, peach slices\nComposition: Dish with cottage cheese and peach slices on the opposite side of the table.\nImage request: A dish of cottage cheese with peach slices on the table.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p1_action_773bc1d836.png",
+      "output_file_relative": "img\\return_01_p1_action_773bc1d836.png",
+      "filename": "return_01_p1_action_773bc1d836.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will come back later.",
+      "intent_type": "time_event",
+      "summary_visual_strategy": "Illustrate the caregiver leaving and returning home after work.",
+      "panel": {
+        "panel_index": 1,
+        "role": "action",
+        "short_caption": "",
+        "visual_elements": [
+          "caregiver",
+          "doorway",
+          "coat"
+        ],
+        "composition_hint": "Caregiver at the doorway, putting on coat, preparing to leave.",
+        "prompt_fragment": "Caregiver standing by a doorway, putting on a coat.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: I will come back later.\nIntent type: time_event\nStoryboard strategy: Illustrate the caregiver leaving and returning home after work.\n\nKey visual elements: caregiver, doorway, coat\nComposition: Caregiver at the doorway, putting on coat, preparing to leave.\nImage request: Caregiver standing by a doorway, putting on a coat.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p2_time-cue_ce28d66c94.png",
+      "output_file_relative": "img\\return_01_p2_time-cue_ce28d66c94.png",
+      "filename": "return_01_p2_time-cue_ce28d66c94.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will come back later.",
+      "intent_type": "time_event",
+      "summary_visual_strategy": "Illustrate the caregiver leaving and returning home after work.",
+      "panel": {
+        "panel_index": 2,
+        "role": "time_cue",
+        "short_caption": "",
+        "visual_elements": [
+          "simple clock",
+          "work"
+        ],
+        "composition_hint": "A clock showing passing time and a faint work scene in the background.",
+        "prompt_fragment": "A clock showing a time cue, perhaps pointing to a later hour.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: I will come back later.\nIntent type: time_event\nStoryboard strategy: Illustrate the caregiver leaving and returning home after work.\n\nKey visual elements: simple clock, work\nComposition: A clock showing passing time and a faint work scene in the background.\nImage request: A clock showing a time cue, perhaps pointing to a later hour.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 3,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p3_return_d7ad16da99.png",
+      "output_file_relative": "img\\return_01_p3_return_d7ad16da99.png",
+      "filename": "return_01_p3_return_d7ad16da99.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will come back later.",
+      "intent_type": "time_event",
+      "summary_visual_strategy": "Illustrate the caregiver leaving and returning home after work.",
+      "panel": {
+        "panel_index": 3,
+        "role": "return",
+        "short_caption": "",
+        "visual_elements": [
+          "caregiver",
+          "older adult",
+          "same doorway"
+        ],
+        "composition_hint": "Caregiver returning through the same doorway to the older adult.",
+        "prompt_fragment": "Caregiver entering through the same doorway back to the older adult.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: I will come back later.\nIntent type: time_event\nStoryboard strategy: Illustrate the caregiver leaving and returning home after work.\n\nKey visual elements: caregiver, older adult, same doorway\nComposition: Caregiver returning through the same doorway to the older adult.\nImage request: Caregiver entering through the same doorway back to the older adult.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "bathroom_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\bathroom_01_p1_context_c9dad11736.png",
+      "output_file_relative": "img\\bathroom_01_p1_context_c9dad11736.png",
+      "filename": "bathroom_01_p1_context_c9dad11736.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_text": "Do you need the bathroom?",
+      "intent_type": "yes_no_question",
+      "summary_visual_strategy": "Show the caregiver offering the option to use the bathroom clearly.",
+      "panel": {
+        "panel_index": 1,
+        "role": "context",
+        "short_caption": "",
+        "visual_elements": [
+          "caregiver",
+          "older adult",
+          "bathroom door"
+        ],
+        "composition_hint": "Caregiver and older adult in a friendly discussion near a bathroom door.",
+        "prompt_fragment": "Caregiver and older adult near the bathroom door, engaging in a conversation.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: Do you need the bathroom?\nIntent type: yes_no_question\nStoryboard strategy: Show the caregiver offering the option to use the bathroom clearly.\n\nKey visual elements: caregiver, older adult, bathroom door\nComposition: Caregiver and older adult in a friendly discussion near a bathroom door.\nImage request: Caregiver and older adult near the bathroom door, engaging in a conversation.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "bathroom_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\bathroom_01_p2_question-cue_66887d538f.png",
+      "output_file_relative": "img\\bathroom_01_p2_question-cue_66887d538f.png",
+      "filename": "bathroom_01_p2_question-cue_66887d538f.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_text": "Do you need the bathroom?",
+      "intent_type": "yes_no_question",
+      "summary_visual_strategy": "Show the caregiver offering the option to use the bathroom clearly.",
+      "panel": {
+        "panel_index": 2,
+        "role": "question_cue",
+        "short_caption": "",
+        "visual_elements": [
+          "large question mark"
+        ],
+        "composition_hint": "A large simple question mark next to the older adult, indicating a question about needing the bathroom.",
+        "prompt_fragment": "A large question mark next to the older adult.",
+        "avoid": [
+          "text",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: Do you need the bathroom?\nIntent type: yes_no_question\nStoryboard strategy: Show the caregiver offering the option to use the bathroom clearly.\n\nKey visual elements: large question mark\nComposition: A large simple question mark next to the older adult, indicating a question about needing the bathroom.\nImage request: A large question mark next to the older adult.\nAvoid: text, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+warm accessible caregiving illustration,
+elderly grandmother and caregiver,
+writing blank check together at kitchen table,
+large checkbook,
+clear hand interaction,
+simple room,
+soft lighting,
+single standalone image,
+no text,
+no captions,
+minimal clutter

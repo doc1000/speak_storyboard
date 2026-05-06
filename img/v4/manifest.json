@@ -1,0 +1,307 @@
+{
+  "created_at": 1778093543,
+  "items": [
+    {
+      "source_id": "lunch_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p1_patient-in-kitchen_0f99067e84.png",
+      "output_file_relative": "img\\lunch_01_p1_patient-in-kitchen_0f99067e84.png",
+      "filename": "lunch_01_p1_patient-in-kitchen_0f99067e84.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch? Soup or cheese?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show the patient choosing between soup and cottage cheese with peaches.",
+      "panel": {
+        "panel_index": 1,
+        "role": "context",
+        "short_caption": "Patient in kitchen",
+        "visual_elements": [
+          "elderly person",
+          "caregiver",
+          "kitchen",
+          "table with food options"
+        ],
+        "composition_hint": "patient and caregiver are in a warm kitchen, seated at the table, facing each other with dishes in front",
+        "prompt_fragment": "An elderly person and caregiver sit at a table with a warm kitchen background, both looking at the dishes on the table, the caregiver points to two options: soup and cottage cheese with peaches, expressing a kind gesture.",
+        "avoid": [
+          "text",
+          "labels",
+          "speach bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch? Soup or cheese?\nIntent type: choice_question\nStoryboard strategy: Show the patient choosing between soup and cottage cheese with peaches.\n\nPanel goal: Patient in kitchen\nKey visual elements: elderly person, caregiver, kitchen, table with food options\nComposition: patient and caregiver are in a warm kitchen, seated at the table, facing each other with dishes in front\nImage request: An elderly person and caregiver sit at a table with a warm kitchen background, both looking at the dishes on the table, the caregiver points to two options: soup and cottage cheese with peaches, expressing a kind gesture.\nAvoid: text, labels, speach bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "lunch_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\lunch_01_p2_soup-or-cottage-cheese-and-peaches_33bf4d5f11.png",
+      "output_file_relative": "img\\lunch_01_p2_soup-or-cottage-cheese-and-peaches_33bf4d5f11.png",
+      "filename": "lunch_01_p2_soup-or-cottage-cheese-and-peaches_33bf4d5f11.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_text": "What do you want for lunch? Soup or cheese?",
+      "intent_type": "choice_question",
+      "summary_visual_strategy": "Show the patient choosing between soup and cottage cheese with peaches.",
+      "panel": {
+        "panel_index": 2,
+        "role": "choice",
+        "short_caption": "Soup or cottage cheese and peaches?",
+        "visual_elements": [
+          "soup bowl",
+          "dish of cottage cheese and peaches"
+        ],
+        "composition_hint": "two clear food options are visible on the table, emphasizing the simplicity of the choice",
+        "prompt_fragment": "A close-up view of the table showing a bowl of soup on one side and a dish of cottage cheese with peaches on the other, with an open space for the elderly person to see both options clearly.",
+        "avoid": [
+          "text",
+          "labels",
+          "speech bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: What do you want for lunch? Soup or cheese?\nIntent type: choice_question\nStoryboard strategy: Show the patient choosing between soup and cottage cheese with peaches.\n\nPanel goal: Soup or cottage cheese and peaches?\nKey visual elements: soup bowl, dish of cottage cheese and peaches\nComposition: two clear food options are visible on the table, emphasizing the simplicity of the choice\nImage request: A close-up view of the table showing a bowl of soup on one side and a dish of cottage cheese with peaches on the other, with an open space for the elderly person to see both options clearly.\nAvoid: text, labels, speech bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p1_caregiver-leaves-for-work_2fa7aeb9d8.png",
+      "output_file_relative": "img\\return_01_p1_caregiver-leaves-for-work_2fa7aeb9d8.png",
+      "filename": "return_01_p1_caregiver-leaves-for-work_2fa7aeb9d8.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will come back later.",
+      "intent_type": "instruction_transition",
+      "summary_visual_strategy": "Show the caregiver leaving for work and returning home later.",
+      "panel": {
+        "panel_index": 1,
+        "role": "transition",
+        "short_caption": "Caregiver leaves for work",
+        "visual_elements": [
+          "caregiver",
+          "door",
+          "outdoor scene"
+        ],
+        "composition_hint": "the caregiver is standing by the front door, waving goodbye, with a warm expression toward the elderly person, who is sitting in a chair inside",
+        "prompt_fragment": "The caregiver stands at the door, waving goodbye with a smile, while the elderly person, seated inside the house, looks calm and content.",
+        "avoid": [
+          "text",
+          "labels",
+          "speech bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: I will come back later.\nIntent type: instruction_transition\nStoryboard strategy: Show the caregiver leaving for work and returning home later.\n\nPanel goal: Caregiver leaves for work\nKey visual elements: caregiver, door, outdoor scene\nComposition: the caregiver is standing by the front door, waving goodbye, with a warm expression toward the elderly person, who is sitting in a chair inside\nImage request: The caregiver stands at the door, waving goodbye with a smile, while the elderly person, seated inside the house, looks calm and content.\nAvoid: text, labels, speech bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p2_time-passing_55409b9525.png",
+      "output_file_relative": "img\\return_01_p2_time-passing_55409b9525.png",
+      "filename": "return_01_p2_time-passing_55409b9525.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will come back later.",
+      "intent_type": "instruction_transition",
+      "summary_visual_strategy": "Show the caregiver leaving for work and returning home later.",
+      "panel": {
+        "panel_index": 2,
+        "role": "time_cue",
+        "short_caption": "Time passing",
+        "visual_elements": [
+          "clock",
+          "sunset"
+        ],
+        "composition_hint": "the clock shows late afternoon, with a sunset visible through a window, emphasizing time passing",
+        "prompt_fragment": "A view of the clock on the wall indicating late afternoon as the sun sets outside, symbolizing the passage of time before the caregiver’s return.",
+        "avoid": [
+          "text",
+          "labels",
+          "speech bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: I will come back later.\nIntent type: instruction_transition\nStoryboard strategy: Show the caregiver leaving for work and returning home later.\n\nPanel goal: Time passing\nKey visual elements: clock, sunset\nComposition: the clock shows late afternoon, with a sunset visible through a window, emphasizing time passing\nImage request: A view of the clock on the wall indicating late afternoon as the sun sets outside, symbolizing the passage of time before the caregiver’s return.\nAvoid: text, labels, speech bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "return_01",
+      "panel_index": 3,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\return_01_p3_caregiver-returns-home_d54b92d96f.png",
+      "output_file_relative": "img\\return_01_p3_caregiver-returns-home_d54b92d96f.png",
+      "filename": "return_01_p3_caregiver-returns-home_d54b92d96f.png",
+      "original_text": "I will be back after work.",
+      "simplified_text": "I will come back later.",
+      "intent_type": "instruction_transition",
+      "summary_visual_strategy": "Show the caregiver leaving for work and returning home later.",
+      "panel": {
+        "panel_index": 3,
+        "role": "return",
+        "short_caption": "Caregiver returns home",
+        "visual_elements": [
+          "caregiver",
+          "door",
+          "elderly person",
+          "warm home scene"
+        ],
+        "composition_hint": "the caregiver is entering the home and the elderly person is looking up with a smile, suggesting a joyful reunion",
+        "prompt_fragment": "The caregiver enters the home again, greeted warmly by the elderly person who is smiling happily in their chair.",
+        "avoid": [
+          "text",
+          "labels",
+          "speech bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: I will come back later.\nIntent type: instruction_transition\nStoryboard strategy: Show the caregiver leaving for work and returning home later.\n\nPanel goal: Caregiver returns home\nKey visual elements: caregiver, door, elderly person, warm home scene\nComposition: the caregiver is entering the home and the elderly person is looking up with a smile, suggesting a joyful reunion\nImage request: The caregiver enters the home again, greeted warmly by the elderly person who is smiling happily in their chair.\nAvoid: text, labels, speech bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "bathroom_01",
+      "panel_index": 1,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\bathroom_01_p1_caregiver-offers-assistance_e4b1eea49b.png",
+      "output_file_relative": "img\\bathroom_01_p1_caregiver-offers-assistance_e4b1eea49b.png",
+      "filename": "bathroom_01_p1_caregiver-offers-assistance_e4b1eea49b.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_text": "Do you need to go to the bathroom?",
+      "intent_type": "yes_no_question",
+      "summary_visual_strategy": "Show the caregiver offering assistance to the patient regarding the bathroom.",
+      "panel": {
+        "panel_index": 1,
+        "role": "question_cue",
+        "short_caption": "Caregiver offers assistance",
+        "visual_elements": [
+          "caregiver",
+          "elderly person",
+          "bathroom door",
+          "confident expression"
+        ],
+        "composition_hint": "the caregiver is standing respectfully in front of the elderly person while gesturing toward the bathroom, suggesting assistance",
+        "prompt_fragment": "The caregiver stands near the elderly person, pointing gently towards the bathroom door, with a friendly face, showing concern for their needs.",
+        "avoid": [
+          "text",
+          "labels",
+          "speech bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: Do you need to go to the bathroom?\nIntent type: yes_no_question\nStoryboard strategy: Show the caregiver offering assistance to the patient regarding the bathroom.\n\nPanel goal: Caregiver offers assistance\nKey visual elements: caregiver, elderly person, bathroom door, confident expression\nComposition: the caregiver is standing respectfully in front of the elderly person while gesturing toward the bathroom, suggesting assistance\nImage request: The caregiver stands near the elderly person, pointing gently towards the bathroom door, with a friendly face, showing concern for their needs.\nAvoid: text, labels, speech bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    },
+    {
+      "source_id": "bathroom_01",
+      "panel_index": 2,
+      "status": "ok",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\bathroom_01_p2_elderly-person-reacts_9b1335d99d.png",
+      "output_file_relative": "img\\bathroom_01_p2_elderly-person-reacts_9b1335d99d.png",
+      "filename": "bathroom_01_p2_elderly-person-reacts_9b1335d99d.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_text": "Do you need to go to the bathroom?",
+      "intent_type": "yes_no_question",
+      "summary_visual_strategy": "Show the caregiver offering assistance to the patient regarding the bathroom.",
+      "panel": {
+        "panel_index": 2,
+        "role": "reassurance",
+        "short_caption": "Elderly person reacts",
+        "visual_elements": [
+          "elderly person",
+          "bathroom door",
+          "reassuring expression"
+        ],
+        "composition_hint": "the elderly person looks thoughtful, indicating they are considering the offer, with a focus on comfort",
+        "prompt_fragment": "The elderly person sits thoughtfully, looking towards the bathroom door, showing a calm demeanor while contemplating the caregiver's offer.",
+        "avoid": [
+          "text",
+          "labels",
+          "speech bubbles",
+          "comic-strip layout",
+          "infographic style",
+          "clutter",
+          "extra people",
+          "busy background"
+        ]
+      },
+      "combined_prompt": "Overall message: Do you need to go to the bathroom?\nIntent type: yes_no_question\nStoryboard strategy: Show the caregiver offering assistance to the patient regarding the bathroom.\n\nPanel goal: Elderly person reacts\nKey visual elements: elderly person, bathroom door, reassuring expression\nComposition: the elderly person looks thoughtful, indicating they are considering the offer, with a focus on comfort\nImage request: The elderly person sits thoughtfully, looking towards the bathroom door, showing a calm demeanor while contemplating the caregiver's offer.\nAvoid: text, labels, speech bubbles, comic-strip layout, infographic style, clutter, extra people, busy background",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      }
+    }
+  ]
+}
