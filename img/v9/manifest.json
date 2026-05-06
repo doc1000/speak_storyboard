@@ -1,0 +1,188 @@
+{
+  "created_at": 1778096715,
+  "items": [
+    {
+      "source_id": "lunch_01",
+      "status": "skipped_no_panels",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json"
+    },
+    {
+      "source_id": "return_01",
+      "status": "skipped_no_panels",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json"
+    },
+    {
+      "source_id": "bathroom_01",
+      "status": "skipped_no_panels",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json"
+    },
+    {
+      "source_id": "lunch_01",
+      "card_index": 1,
+      "scene_label": "Soup Option",
+      "reuse_key": "lunch_soup",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v9\\lunch_01_c1_lunch-soup_f8b753920e.png",
+      "output_file_relative": "img\\v9\\lunch_01_c1_lunch-soup_f8b753920e.png",
+      "filename": "lunch_01_c1_lunch-soup_f8b753920e.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Lunch options: Soup or cottage cheese and peaches.",
+      "card": {
+        "card_index": 1,
+        "scene_label": "Soup Option",
+        "reuse_key": "lunch_soup",
+        "prompt": "An older adult looks at a warm bowl of soup with a friendly caregiver pointing at it, expressing warmth and care in a simple kitchen setting. The scene is calm and inviting, with minimal clutter."
+      },
+      "combined_prompt": "An older adult looks at a warm bowl of soup with a friendly caregiver pointing at it, expressing warmth and care in a simple kitchen setting. The scene is calm and inviting, with minimal clutter., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "lunch_01",
+      "card_index": 2,
+      "scene_label": "Cottage Cheese and Peaches Option",
+      "reuse_key": "lunch_cottage_cheese_peaches",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v9\\lunch_01_c2_lunch-cottage-cheese-peaches_34fe8f9933.png",
+      "output_file_relative": "img\\v9\\lunch_01_c2_lunch-cottage-cheese-peaches_34fe8f9933.png",
+      "filename": "lunch_01_c2_lunch-cottage-cheese-peaches_34fe8f9933.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Lunch options: Soup or cottage cheese and peaches.",
+      "card": {
+        "card_index": 2,
+        "scene_label": "Cottage Cheese and Peaches Option",
+        "reuse_key": "lunch_cottage_cheese_peaches",
+        "prompt": "An older adult looks at a plate of cottage cheese with peaches, with a friendly caregiver smiling and pointing at it, showing care in a cozy kitchen setting. The environment is simple and clear."
+      },
+      "combined_prompt": "An older adult looks at a plate of cottage cheese with peaches, with a friendly caregiver smiling and pointing at it, showing care in a cozy kitchen setting. The environment is simple and clear., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 1,
+      "scene_label": "Caregiver Leaving",
+      "reuse_key": "caregiver_leaving",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v9\\return_01_c1_caregiver-leaving_dd86689591.png",
+      "output_file_relative": "img\\v9\\return_01_c1_caregiver-leaving_dd86689591.png",
+      "filename": "return_01_c1_caregiver-leaving_dd86689591.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "I will come back later.",
+      "card": {
+        "card_index": 1,
+        "scene_label": "Caregiver Leaving",
+        "reuse_key": "caregiver_leaving",
+        "prompt": "A caregiver is waving goodbye to an older adult in a living room, showing a kind expression while holding a bag, suggesting they are going to work. The scene is calm and supportive."
+      },
+      "combined_prompt": "A caregiver is waving goodbye to an older adult in a living room, showing a kind expression while holding a bag, suggesting they are going to work. The scene is calm and supportive., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 2,
+      "scene_label": "Time Cue",
+      "reuse_key": "time_cue",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v9\\return_01_c2_time-cue_356a37ca49.png",
+      "output_file_relative": "img\\v9\\return_01_c2_time-cue_356a37ca49.png",
+      "filename": "return_01_c2_time-cue_356a37ca49.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "I will come back later.",
+      "card": {
+        "card_index": 2,
+        "scene_label": "Time Cue",
+        "reuse_key": "time_cue",
+        "prompt": "A clock showing 5 o'clock, indicating time passing, with soft lighting in a nearby room context. The background is minimal and unobtrusive."
+      },
+      "combined_prompt": "A clock showing 5 o'clock, indicating time passing, with soft lighting in a nearby room context. The background is minimal and unobtrusive., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 3,
+      "scene_label": "Caregiver Returning",
+      "reuse_key": "caregiver_returning",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v9\\return_01_c3_caregiver-returning_58d78313ba.png",
+      "output_file_relative": "img\\v9\\return_01_c3_caregiver-returning_58d78313ba.png",
+      "filename": "return_01_c3_caregiver-returning_58d78313ba.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "I will come back later.",
+      "card": {
+        "card_index": 3,
+        "scene_label": "Caregiver Returning",
+        "reuse_key": "caregiver_returning",
+        "prompt": "The caregiver is entering through the front door with a smile, greeted by the older adult in the living room, both showing happy expressions. The setting is warm and welcoming."
+      },
+      "combined_prompt": "The caregiver is entering through the front door with a smile, greeted by the older adult in the living room, both showing happy expressions. The setting is warm and welcoming., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "bathroom_01",
+      "card_index": 1,
+      "scene_label": "Caregiver Asking",
+      "reuse_key": "caregiver_asking_bathroom",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v9\\bathroom_01_c1_caregiver-asking-bathroom_84582133f1.png",
+      "output_file_relative": "img\\v9\\bathroom_01_c1_caregiver-asking-bathroom_84582133f1.png",
+      "filename": "bathroom_01_c1_caregiver-asking-bathroom_84582133f1.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_message": "Do you need to go to the bathroom?",
+      "card": {
+        "card_index": 1,
+        "scene_label": "Caregiver Asking",
+        "reuse_key": "caregiver_asking_bathroom",
+        "prompt": "A caregiver is kindly asking an older adult if they need to use the bathroom, with a caring expression and an open hand gesture towards the bathroom door, set in a simple living space. The atmosphere is supportive and calm."
+      },
+      "combined_prompt": "A caregiver is kindly asking an older adult if they need to use the bathroom, with a caring expression and an open hand gesture towards the bathroom door, set in a simple living space. The atmosphere is supportive and calm., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    }
+  ]
+}

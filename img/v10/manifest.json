@@ -1,0 +1,87 @@
+{
+  "created_at": 1778097309,
+  "schema": "generated_image_manifest_v2",
+  "items": [
+    {
+      "source_id": "lunch_01",
+      "card_index": 1,
+      "scene_label": "Lunch Options",
+      "reuse_key": "lunch_options",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v10\\lunch_01_c1_lunch-options_a34de7c683.png",
+      "output_file_relative": "img\\v10\\lunch_01_c1_lunch-options_a34de7c683.png",
+      "filename": "lunch_01_c1_lunch-options_a34de7c683.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Lunch options",
+      "card": {
+        "card_index": 1,
+        "scene_label": "Lunch Options",
+        "reuse_key": "lunch_options",
+        "prompt": "warm clean elder-care illustration, elderly woman with gray hair, caring middle-aged caregiver, one holding a bowl of soup and another showing a plate with cottage cheese and peaches, simple home kitchen setting, smiling, no text, no captions, minimal clutter."
+      },
+      "combined_prompt": "warm clean elder-care illustration, elderly woman with gray hair, caring middle-aged caregiver, one holding a bowl of soup and another showing a plate with cottage cheese and peaches, simple home kitchen setting, smiling, no text, no captions, minimal clutter., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 1,
+      "scene_label": "Caregiver Leaving",
+      "reuse_key": "caregiver_leaving",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v10\\return_01_c1_caregiver-leaving_c623adbbf9.png",
+      "output_file_relative": "img\\v10\\return_01_c1_caregiver-leaving_c623adbbf9.png",
+      "filename": "return_01_c1_caregiver-leaving_c623adbbf9.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "Returning later",
+      "card": {
+        "card_index": 1,
+        "scene_label": "Caregiver Leaving",
+        "reuse_key": "caregiver_leaving",
+        "prompt": "warm clean elder-care illustration, elderly man with gray hair sitting in a chair, middle-aged caregiver waving goodbye while walking towards the door, simple home setting, warm atmosphere, no text, no captions, minimal clutter."
+      },
+      "combined_prompt": "warm clean elder-care illustration, elderly man with gray hair sitting in a chair, middle-aged caregiver waving goodbye while walking towards the door, simple home setting, warm atmosphere, no text, no captions, minimal clutter., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "bathroom_01",
+      "card_index": 1,
+      "scene_label": "Bathroom Check",
+      "reuse_key": "bathroom_check",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v10\\bathroom_01_c1_bathroom-check_f665205b4c.png",
+      "output_file_relative": "img\\v10\\bathroom_01_c1_bathroom-check_f665205b4c.png",
+      "filename": "bathroom_01_c1_bathroom-check_f665205b4c.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_message": "Bathroom check",
+      "card": {
+        "card_index": 1,
+        "scene_label": "Bathroom Check",
+        "reuse_key": "bathroom_check",
+        "prompt": "warm clean elder-care illustration, elderly woman with gray hair, caring middle-aged caregiver gently asking while standing near a bathroom door, simple home setting, concerned facial expression, no text, no captions, minimal clutter."
+      },
+      "combined_prompt": "warm clean elder-care illustration, elderly woman with gray hair, caring middle-aged caregiver gently asking while standing near a bathroom door, simple home setting, concerned facial expression, no text, no captions, minimal clutter., single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    }
+  ]
+}

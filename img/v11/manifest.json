@@ -1,0 +1,222 @@
+{
+  "created_at": 1778097663,
+  "schema": "generated_image_manifest_v2",
+  "items": [
+    {
+      "source_id": "lunch_01",
+      "card_index": 1,
+      "scene_label": "choose_lunch",
+      "reuse_key": "choose_food",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\lunch_01_c1_choose-food_67fc784ab2.png",
+      "output_file_relative": "img\\v11\\lunch_01_c1_choose-food_67fc784ab2.png",
+      "filename": "lunch_01_c1_choose-food_67fc784ab2.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Choose food for lunch",
+      "card": {
+        "card_index": 1,
+        "scene_label": "choose_lunch",
+        "reuse_key": "choose_food",
+        "prompt": "warm clean elder-care illustration, elderly grandmother with gray hair sitting at a dining table, looking at a caregiver who is showing a bowl of soup and a plate with cottage cheese and peaches, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, elderly grandmother with gray hair sitting at a dining table, looking at a caregiver who is showing a bowl of soup and a plate with cottage cheese and peaches, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "lunch_01",
+      "card_index": 2,
+      "scene_label": "soup_option",
+      "reuse_key": "soup_option",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\lunch_01_c2_soup-option_e88bc4e7c5.png",
+      "output_file_relative": "img\\v11\\lunch_01_c2_soup-option_e88bc4e7c5.png",
+      "filename": "lunch_01_c2_soup-option_e88bc4e7c5.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Choose food for lunch",
+      "card": {
+        "card_index": 2,
+        "scene_label": "soup_option",
+        "reuse_key": "soup_option",
+        "prompt": "warm clean elder-care illustration, a bowl of soup on the table, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, a bowl of soup on the table, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "lunch_01",
+      "card_index": 3,
+      "scene_label": "cottage_cheese_option",
+      "reuse_key": "cottage_cheese_option",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\lunch_01_c3_cottage-cheese-option_30f64a865e.png",
+      "output_file_relative": "img\\v11\\lunch_01_c3_cottage-cheese-option_30f64a865e.png",
+      "filename": "lunch_01_c3_cottage-cheese-option_30f64a865e.png",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Choose food for lunch",
+      "card": {
+        "card_index": 3,
+        "scene_label": "cottage_cheese_option",
+        "reuse_key": "cottage_cheese_option",
+        "prompt": "warm clean elder-care illustration, a plate of cottage cheese with peaches on the table, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, a plate of cottage cheese with peaches on the table, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 1,
+      "scene_label": "caregiver_leaving",
+      "reuse_key": "caregiver_leaving",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\return_01_c1_caregiver-leaving_3441cb1dcd.png",
+      "output_file_relative": "img\\v11\\return_01_c1_caregiver-leaving_3441cb1dcd.png",
+      "filename": "return_01_c1_caregiver-leaving_3441cb1dcd.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "Caregiver leaving and returning",
+      "card": {
+        "card_index": 1,
+        "scene_label": "caregiver_leaving",
+        "reuse_key": "caregiver_leaving",
+        "prompt": "warm clean elder-care illustration, middle-aged caregiver waving goodbye as they stand by the front door, elderly grandmother sitting in a chair inside, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, middle-aged caregiver waving goodbye as they stand by the front door, elderly grandmother sitting in a chair inside, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 2,
+      "scene_label": "caregiver_work",
+      "reuse_key": "caregiver_work",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\return_01_c2_caregiver-work_7a4c222a27.png",
+      "output_file_relative": "img\\v11\\return_01_c2_caregiver-work_7a4c222a27.png",
+      "filename": "return_01_c2_caregiver-work_7a4c222a27.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "Caregiver leaving and returning",
+      "card": {
+        "card_index": 2,
+        "scene_label": "caregiver_work",
+        "reuse_key": "caregiver_work",
+        "prompt": "warm clean elder-care illustration, middle-aged caregiver working at an office desk with a computer, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, middle-aged caregiver working at an office desk with a computer, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "return_01",
+      "card_index": 3,
+      "scene_label": "caregiver_returning",
+      "reuse_key": "caregiver_returning",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\return_01_c3_caregiver-returning_094ad287fa.png",
+      "output_file_relative": "img\\v11\\return_01_c3_caregiver-returning_094ad287fa.png",
+      "filename": "return_01_c3_caregiver-returning_094ad287fa.png",
+      "original_text": "I will be back after work.",
+      "simplified_message": "Caregiver leaving and returning",
+      "card": {
+        "card_index": 3,
+        "scene_label": "caregiver_returning",
+        "reuse_key": "caregiver_returning",
+        "prompt": "warm clean elder-care illustration, middle-aged caregiver coming back in the front door, elderly grandmother looking happy in a chair, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, middle-aged caregiver coming back in the front door, elderly grandmother looking happy in a chair, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "bathroom_01",
+      "card_index": 1,
+      "scene_label": "need_bathroom",
+      "reuse_key": "need_bathroom",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\bathroom_01_c1_need-bathroom_bedabe8aca.png",
+      "output_file_relative": "img\\v11\\bathroom_01_c1_need-bathroom_bedabe8aca.png",
+      "filename": "bathroom_01_c1_need-bathroom_bedabe8aca.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_message": "Check if bathroom is needed",
+      "card": {
+        "card_index": 1,
+        "scene_label": "need_bathroom",
+        "reuse_key": "need_bathroom",
+        "prompt": "warm clean elder-care illustration, elderly grandmother with gray hair sitting in a chair looking thoughtful, caregiver standing nearby with a concerned expression, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, elderly grandmother with gray hair sitting in a chair looking thoughtful, caregiver standing nearby with a concerned expression, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    },
+    {
+      "source_id": "bathroom_01",
+      "card_index": 2,
+      "scene_label": "bathroom",
+      "reuse_key": "bathroom",
+      "model": "black-forest-labs/FLUX.1-schnell",
+      "provider": "auto",
+      "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\storyboards.json",
+      "output_file": "C:\\Users\\doste\\projects\\speak_storyboard\\img\\v11\\bathroom_01_c2_bathroom_4391896e43.png",
+      "output_file_relative": "img\\v11\\bathroom_01_c2_bathroom_4391896e43.png",
+      "filename": "bathroom_01_c2_bathroom_4391896e43.png",
+      "original_text": "Do you need to use the bathroom?",
+      "simplified_message": "Check if bathroom is needed",
+      "card": {
+        "card_index": 2,
+        "scene_label": "bathroom",
+        "reuse_key": "bathroom",
+        "prompt": "warm clean elder-care illustration, bathroom door slightly ajar with light coming through, simple home setting, no text, no captions, no labels, minimal clutter"
+      },
+      "combined_prompt": "warm clean elder-care illustration, bathroom door slightly ajar with light coming through, simple home setting, no text, no captions, no labels, minimal clutter, single standalone image, no text, no captions, no labels, no speech bubbles, no signs, no handwriting, no logos, no UI, no comic layout, minimal clutter",
+      "parameters": {
+        "width": 1024,
+        "height": 1024,
+        "num_inference_steps": 4
+      },
+      "status": "ok"
+    }
+  ]
+}

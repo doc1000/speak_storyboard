@@ -1,204 +1,80 @@
 {
   "meta": {
     "model": "gpt-4o-mini",
-    "generated_at": 1778094053,
+    "generated_at": 1778097638,
     "input_json": "C:\\Users\\doste\\projects\\speak_storyboard\\sample_questions.json",
-    "item_count": 3
+    "item_count": 3,
+    "schema": "minimal_image_cards_v1"
   },
-  "service_prompt": "You are designing visual communication image plans for an older adult patient who understands simple pictures better than written text.\n\nYour job is to convert caregiver questions or statements into a small sequence of up to 4 simple visual scenes.\n\nPrimary goal:\nCreate image plans that help the patient understand the caregiver’s message quickly, calmly, and accurately.\n\nCore design philosophy:\n\n* Think like a visual communication designer for elder care, not a comic artist.\n* Clarity is more important than creativity.\n* Prefer concrete, familiar visuals over abstraction.\n* Prefer one simple idea per image.\n* Favor emotionally readable caregiving moments.\n* Favor familiar home-care situations, meals, bathroom, chair, doorway, caregiver, and returning-home scenes.\n* Make people, objects, and actions obvious at first glance.\n* Use expressive faces, body language, gaze direction, pointing, and hand-object interaction to communicate meaning.\n* Keep scenes visually simple and uncluttered.\n* Keep backgrounds minimal and supportive.\n* Avoid decorative details that do not contribute to the message.\n* Avoid metaphor, symbolism, surrealism, artistic flourish, or visual cleverness.\n\nCritical image-generation guidance:\n\n* Every panel must represent ONE standalone image scene.\n* Never design comic strips, split panels, collages, storyboard pages, infographics, posters, memes, or multi-frame layouts.\n* Each generated image should feel like:\n\n  * a clean animated film still\n  * a healthcare communication card\n  * a simple visual cue for cognition support\n* The image must remain understandable even if all text is removed.\n\nAbsolute no-text rule:\nAbsolutely prohibit all readable text inside the image.\n\nDo not include:\n\n* captions\n* labels\n* signs\n* speech bubbles\n* handwritten notes\n* posters\n* calendars\n* newspapers\n* phone screens with text\n* UI text\n* subtitles\n* logos\n* watermarks\n* packaging text\n* book pages\n* whiteboards\n* comic lettering\n* letters or words of any kind\n\nImages should contain zero readable words or letters.\n\nVisual style guidance:\nUse a warm, simple animated illustration style suitable for elder-care communication.\n\nPrefer:\n\n* soft Pixar-like warmth\n* rounded friendly characters\n* expressive body language\n* calm emotional tone\n* simple room layouts\n* clean compositions\n* large recognizable objects\n* warm lighting\n* minimal clutter\n* accessibility-focused illustration\n\nAvoid:\n\n* photorealism\n* anime\n* comic-book style\n* horror\n* surrealism\n* painterly abstraction\n* highly cinematic scenes\n* exaggerated fantasy\n* dark dramatic lighting\n\nComposition guidance:\nPrefer:\n\n* medium shots\n* waist-up or full-body people\n* centered subjects\n* large clear objects\n* obvious hand interaction with objects\n* clear caregiver/patient positioning\n* simple room structure\n* one primary action per image\n\nAvoid:\n\n* crowded rooms\n* multiple simultaneous actions\n* tiny distant people\n* dramatic camera angles\n* extreme closeups\n* complex perspective\n* cluttered kitchens or living rooms\n* extra background people\n* partially hidden important objects\n* cropped hands or faces\n\nQuestion and cue guidance:\n\n* Prefer emotional and physical cues over symbols.\n* A questioning facial expression or offering gesture is usually better than a graphic symbol.\n* A simple question mark may be used only if clarity truly improves.\n* Use arrows only when physical direction or movement is important.\n* Use clocks only when time passing is essential.\n* Use these cues sparingly.\n\nChoice guidance:\n\n* For choice questions, usually show:\n\n  1. person/context\n  2. one clear option per image\n  3. optional final question cue\n* Keep options visually separate and easy to recognize.\n* Food choices should be shown clearly, simply, and one option at a time.\n\nSequence guidance:\n\n* If the utterance describes a sequence, break it into simple left-to-right steps.\n* Only create multiple images when sequence is truly necessary.\n* Prefer 1 to 3 images when possible.\n* Use 4 only if needed.\n* For “I will be back after work,” prefer a simple sequence such as:\n  caregiver leaving → work/time cue → caregiver returning home.\n\nPatient-centered guidance:\n\n* Keep the emotional tone calm, reassuring, and respectful.\n* Show caregiver intent clearly through posture and expression.\n* When relevant, show the same grandmother and caregiver consistently across scenes.\n* Favor reassurance and comprehension over efficiency.\n\nOutput rules:\n\n* Output only schema-conforming JSON.\n* Preserve source_id and original_text.\n* simplified_text should be short, plain, and easy for a caregiver to say aloud.\n* summary_visual_strategy should describe the communication approach in one sentence.\n* visual_elements should contain only concrete noun phrases.\n* composition_hint should describe visual arrangement only.\n\nprompt_fragment rules:\nEach prompt_fragment must describe ONE standalone image scene only.\n\nEvery prompt_fragment should:\n\n* explicitly describe the main subject\n* explicitly describe the action or state\n* describe the important object clearly\n* describe the emotional tone\n* reinforce clean accessible composition\n* reinforce no text inside image\n* reinforce standalone single-scene layout\n\nGood prompt_fragment characteristics:\n\n* warm accessible illustration\n* clear subject and object relationship\n* obvious caregiver intent\n* simple readable environment\n* minimal clutter\n* single standalone image\n* no text\n* no labels\n* no comic layout\n\navoid guidance:\nThe avoid field should explicitly mention likely image-generation failure modes such as:\n\n* text\n* captions\n* labels\n* speech bubbles\n* comic-strip layout\n* split panels\n* infographic style\n* clutter\n* extra people\n* busy background\n* hidden hands\n* cropped faces\n* tiny important objects\n* confusing symbolism\n* photorealism\n* dramatic cinematic lighting\n\nClarity and emotional readability are more important than artistic detail.",
   "items": [
     {
       "source_id": "lunch_01",
       "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
-      "simplified_text": "What do you want for lunch?",
-      "intent_type": "choice_question",
-      "is_question": true,
-      "question_marker_at_end": false,
-      "panel_count": 2,
-      "summary_visual_strategy": "Show the patient making a choice between two lunch options.",
-      "panels": [
+      "simplified_message": "Choose food for lunch",
+      "cards": [
         {
-          "panel_index": 1,
-          "role": "person",
-          "semantic_tags": [
-            "elderly",
-            "caregiver"
-          ],
-          "reuse_key": "lunch_option_1",
-          "scene_label": "Caregiver offering lunch options",
-          "visual_elements": [
-            "caregiver looking gently at patient",
-            "patient sitting at a table",
-            "two distinct food options: soup in a bowl and cottage cheese with peaches on a plate"
-          ],
-          "composition_hint": "Centered composition with caregiver and patient prominently featured, showing food clearly.",
-          "prompt_fragment": "A caregiver is offering two food options to a patient sitting at a table, looking inviting and warm.",
-          "avoid": [
-            "text",
-            "labels",
-            "busy background",
-            "hidden hands"
-          ]
+          "card_index": 1,
+          "scene_label": "choose_lunch",
+          "reuse_key": "choose_food",
+          "prompt": "warm clean elder-care illustration, elderly grandmother with gray hair sitting at a dining table, looking at a caregiver who is showing a bowl of soup and a plate with cottage cheese and peaches, simple home setting, no text, no captions, no labels, minimal clutter"
         },
         {
-          "panel_index": 2,
-          "role": "choice",
-          "semantic_tags": [
-            "food",
-            "choice"
-          ],
-          "reuse_key": "lunch_option_2",
-          "scene_label": "Food options presented to patient",
-          "visual_elements": [
-            "close-up of soup in bowl",
-            "close-up of cottage cheese with peaches on plate"
-          ],
-          "composition_hint": "Simple arrangement with both food options clearly visible and separated, emphasizing choice.",
-          "prompt_fragment": "The two food options are presented: soup in a bowl and cottage cheese with peaches on a plate.",
-          "avoid": [
-            "text",
-            "labels",
-            "design elements that distract from the food"
-          ]
+          "card_index": 2,
+          "scene_label": "soup_option",
+          "reuse_key": "soup_option",
+          "prompt": "warm clean elder-care illustration, a bowl of soup on the table, simple home setting, no text, no captions, no labels, minimal clutter"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "cottage_cheese_option",
+          "reuse_key": "cottage_cheese_option",
+          "prompt": "warm clean elder-care illustration, a plate of cottage cheese with peaches on the table, simple home setting, no text, no captions, no labels, minimal clutter"
         }
-      ],
-      "notes_for_caregiver": []
+      ]
     },
     {
       "source_id": "return_01",
       "original_text": "I will be back after work.",
-      "simplified_text": "I will return after work.",
-      "intent_type": "time_event",
-      "is_question": false,
-      "question_marker_at_end": false,
-      "panel_count": 3,
-      "summary_visual_strategy": "Show the caregiver leaving for work and returning home.",
-      "panels": [
+      "simplified_message": "Caregiver leaving and returning",
+      "cards": [
         {
-          "panel_index": 1,
-          "role": "action",
-          "semantic_tags": [
-            "departure",
-            "caregiver"
-          ],
+          "card_index": 1,
+          "scene_label": "caregiver_leaving",
           "reuse_key": "caregiver_leaving",
-          "scene_label": "Caregiver leaving home",
-          "visual_elements": [
-            "caregiver saying goodbye",
-            "patient waving",
-            "doorway in background"
-          ],
-          "composition_hint": "Caregiver is standing at the door, patient is near, both expressing a warm farewell.",
-          "prompt_fragment": "A caregiver is standing at the door, waving goodbye to the patient, who is also waving.",
-          "avoid": [
-            "text",
-            "labels",
-            "busy backgrounds",
-            "extra people"
-          ]
+          "prompt": "warm clean elder-care illustration, middle-aged caregiver waving goodbye as they stand by the front door, elderly grandmother sitting in a chair inside, simple home setting, no text, no captions, no labels, minimal clutter"
         },
         {
-          "panel_index": 2,
-          "role": "location",
-          "semantic_tags": [
-            "work"
-          ],
-          "reuse_key": "at_work",
-          "scene_label": "Caregiver at work",
-          "visual_elements": [
-            "caregiver working at desk",
-            "clock showing time"
-          ],
-          "composition_hint": "Caregiver is at work, shown at a desk with a clock visible to indicate time passing.",
-          "prompt_fragment": "The caregiver is shown working at a desk with a clock indicating time passing.",
-          "avoid": [
-            "text",
-            "labels",
-            "cluttered workspace",
-            "extra people"
-          ]
+          "card_index": 2,
+          "scene_label": "caregiver_work",
+          "reuse_key": "caregiver_work",
+          "prompt": "warm clean elder-care illustration, middle-aged caregiver working at an office desk with a computer, simple home setting, no text, no captions, no labels, minimal clutter"
         },
         {
-          "panel_index": 3,
-          "role": "action",
-          "semantic_tags": [
-            "return",
-            "home"
-          ],
+          "card_index": 3,
+          "scene_label": "caregiver_returning",
           "reuse_key": "caregiver_returning",
-          "scene_label": "Caregiver returning home",
-          "visual_elements": [
-            "caregiver walking back inside",
-            "patient looking happy at the door"
-          ],
-          "composition_hint": "Caregiver is entering the house with a welcoming expression, patient is happy to see them.",
-          "prompt_fragment": "The caregiver is returning home with a smile, while the patient is happily waiting at the door.",
-          "avoid": [
-            "text",
-            "labels",
-            "busy backgrounds",
-            "unrelated action"
-          ]
+          "prompt": "warm clean elder-care illustration, middle-aged caregiver coming back in the front door, elderly grandmother looking happy in a chair, simple home setting, no text, no captions, no labels, minimal clutter"
         }
-      ],
-      "notes_for_caregiver": []
+      ]
     },
     {
       "source_id": "bathroom_01",
       "original_text": "Do you need to use the bathroom?",
-      "simplified_text": "Do you need the bathroom?",
-      "intent_type": "yes_no_question",
-      "is_question": true,
-      "question_marker_at_end": true,
-      "panel_count": 2,
-      "summary_visual_strategy": "Show the caregiver asking if the patient needs to go to the bathroom.",
-      "panels": [
+      "simplified_message": "Check if bathroom is needed",
+      "cards": [
         {
-          "panel_index": 1,
-          "role": "person",
-          "semantic_tags": [
-            "question",
-            "caregiver"
-          ],
-          "reuse_key": "caregiver_asking",
-          "scene_label": "Caregiver asking about bathroom need",
-          "visual_elements": [
-            "caregiver looking questioningly at patient",
-            "patient responding with expression of thought"
-          ],
-          "composition_hint": "Caregiver is close to the patient, both are engaging in conversation about the bathroom need.",
-          "prompt_fragment": "A caregiver is asking the patient if they need to use the bathroom, with a questioning look.",
-          "avoid": [
-            "text",
-            "labels",
-            "confusing expressions",
-            "busy backgrounds"
-          ]
+          "card_index": 1,
+          "scene_label": "need_bathroom",
+          "reuse_key": "need_bathroom",
+          "prompt": "warm clean elder-care illustration, elderly grandmother with gray hair sitting in a chair looking thoughtful, caregiver standing nearby with a concerned expression, simple home setting, no text, no captions, no labels, minimal clutter"
         },
         {
-          "panel_index": 2,
-          "role": "action",
-          "semantic_tags": [
-            "bathroom",
-            "response"
-          ],
-          "reuse_key": "bathroom_access",
-          "scene_label": "Bathroom door and patient",
-          "visual_elements": [
-            "bathroom door visibly open",
-            "patient looking towards the bathroom"
-          ],
-          "composition_hint": "The patient looks towards the bathroom door, indicating their consideration or decision.",
-          "prompt_fragment": "The open bathroom door is shown with the patient looking at it, indicating need.",
-          "avoid": [
-            "text",
-            "labels",
-            "unrelated actions",
-            "busy areas"
-          ]
+          "card_index": 2,
+          "scene_label": "bathroom",
+          "reuse_key": "bathroom",
+          "prompt": "warm clean elder-care illustration, bathroom door slightly ajar with light coming through, simple home setting, no text, no captions, no labels, minimal clutter"
         }
-      ],
-      "notes_for_caregiver": []
+      ]
     }
   ]
 }
