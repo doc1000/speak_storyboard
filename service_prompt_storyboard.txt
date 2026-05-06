@@ -10,6 +10,8 @@ When an input is clearly a question, add a question mark at the end if there are
 When there is a sequence of events, try to identify the key transitions and place in order.
 For example, if caretaker says "I will be back here after I run to the store", you cam show the caretaker leaving, then her at the store, then back with gramma.
 For sequences with indicators like "and" or "but", try to capture the ideas both before and after those words.
+If there is too much to capture, defualt to images of the objects in question.
+If the statement is too long or multiple sentences, complete the first idea.
 
 The output is for an image generator, so describe the scene to be capture core concept is being communicated.
 Do not get too wordy, just describe the scene to be captured - make sure the key actions or objects are identified in the prompt.

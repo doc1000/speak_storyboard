@@ -146,6 +146,53 @@
       margin-bottom: 4px;
     }
 
+    .history-strip {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      overflow-x: auto;
+      padding: 10px 4px 14px;
+      margin-bottom: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .history-strip-card {
+      flex: 0 0 140px;
+      width: 140px;
+      background: #fbfaf7;
+      border: 3px solid #e2ded5;
+      border-radius: 18px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: grab;
+      user-select: none;
+      scroll-snap-align: start;
+    }
+
+    .history-strip-card:active { cursor: grabbing; }
+
+    .history-strip-card img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 100px;
+      object-fit: cover;
+      margin-bottom: 6px;
+    }
+
+    .history-strip-label {
+      font-size: 12px;
+      color: #444;
+      font-weight: bold;
+      line-height: 1.2;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
     .caption {
       font-size: 23px;
       font-weight: bold;
@@ -318,12 +365,11 @@
           <p class="note" style="margin: 6px 0 0;">Drag saved picture activities into a part of the day.</p>
         </div>
         <div>
-          <button class="small-button" onclick="saveCurrentActivity()">Save Current Activity</button>
           <button class="small-button" onclick="resetPlanner()">Reset Plan</button>
         </div>
       </div>
 
-      <div id="savedActivities" class="saved-row" ondragover="allowDrop(event)" ondrop="dropActivity(event, 'savedActivities')"></div>
+      <div id="historyStrip" class="history-strip"></div>
 
       <div class="slots">
         <div id="morningSlot" class="slot" ondragover="allowDrop(event)" ondragleave="leaveDrop(event)" ondrop="dropActivity(event, 'morningSlot')">
@@ -363,9 +409,7 @@
         if (historyItems.length > 0) {
           renderFromHistory(historyItems[0]);
         }
-        // Re-seed activities with real image cards now that history is loaded
-        document.getElementById('savedActivities').innerHTML = '';
-        seedActivities();
+        renderHistoryStrip();
       } catch (e) {
         // Server not reachable — emoji fallback already shown by _generateStoryboardOffline()
       }
@@ -431,6 +475,37 @@
           <div class="caption">${card.scene_label || card.caption || ''}</div>
         `;
         storyboard.appendChild(div);
+      });
+    }
+
+    function renderHistoryStrip() {
+      const strip = document.getElementById('historyStrip');
+      strip.innerHTML = '';
+      historyItems.slice(0, 10).forEach(item => {
+        const firstCard = item.cards[0];
+        if (!firstCard) return;
+
+        const card = document.createElement('div');
+        card.className = 'history-strip-card';
+        card.draggable = true;
+
+        const payload = JSON.stringify({
+          source_id: item.source_id,
+          image_url: firstCard.image_url || null,
+          label: item.simplified_message || item.original_text,
+        });
+        card.addEventListener('dragstart', e => {
+          e.dataTransfer.setData('application/json', payload);
+        });
+
+        const label = (item.simplified_message || item.original_text).slice(0, 35);
+        card.innerHTML = firstCard.image_url
+          ? `<img src="${firstCard.image_url}" alt="${firstCard.scene_label}" draggable="false">
+             <div class="history-strip-label">${label}</div>`
+          : `<div style="font-size:36px;margin-bottom:6px">\uD83D\uDDBC\uFE0F</div>
+             <div class="history-strip-label">${label}</div>`;
+
+        strip.appendChild(card);
       });
     }
 
@@ -602,6 +677,7 @@
       renderFromHistory(data);
       historyItems.unshift(data);
       buildHistoryChips();
+      renderHistoryStrip();
     }
 
     function _generateStoryboardOffline() {
@@ -655,17 +731,6 @@
       return card;
     }
 
-    function saveCurrentActivity() {
-      if (!currentScenario) generateStoryboard();
-      activityCounter += 1;
-      const activity = {
-        id: 'activity-' + activityCounter,
-        emoji: currentScenario.activityEmoji || currentScenario.panels.map(p => p.emoji).join(''),
-        label: currentScenario.activityLabel || currentScenario.panels[0].caption
-      };
-      document.getElementById('savedActivities').appendChild(createActivityCard(activity));
-    }
-
     function dragActivity(event) {
       event.dataTransfer.setData('text/plain', event.currentTarget.id);
     }
@@ -715,39 +780,13 @@
     function resetPlanner() {
       ['morningSlot', 'afternoonSlot', 'eveningSlot'].forEach(id => {
         const slot = document.getElementById(id);
-        const title = slot.querySelector('.slot-title').outerHTML;
         const helpText = id === 'morningSlot' ? 'Morning' : id === 'afternoonSlot' ? 'Afternoon' : 'Evening';
         slot.innerHTML = `<div class="slot-title">${helpText}</div><div class="slot-help">Drop activity here</div>`;
       });
-      document.getElementById('savedActivities').innerHTML = '';
-      seedActivities();
-    }
-
-    function seedActivities() {
-      const saved = document.getElementById('savedActivities');
-      if (historyItems.length > 0) {
-        historyItems.slice(0, 3).forEach((item, i) => {
-          const firstCard = item.cards[0] || {};
-          saved.appendChild(createActivityCard({
-            id: `activity-seed-${i + 1}`,
-            image_url: firstCard.image_url || null,
-            emoji: '🖼\uFE0F',
-            label: (item.simplified_message || item.original_text).slice(0, 25),
-          }));
-        });
-      } else {
-        // Fallback before history loads
-        [
-          { id: 'activity-seed-1', emoji: '🍲❓', label: 'Lunch' },
-          { id: 'activity-seed-2', emoji: '💊🥤', label: 'Medicine' },
-          { id: 'activity-seed-3', emoji: '🚗', label: 'Car ride' },
-        ].forEach(a => saved.appendChild(createActivityCard(a)));
-      }
     }
 
     _generateStoryboardOffline(); // immediate emoji fallback while history loads
-    seedActivities();
-    loadHistory();               // async — replaces view with real PNG cards when server responds
+    loadHistory();               // async — renders gallery and real PNG cards when server responds
   </script>
 </body>
 </html>
