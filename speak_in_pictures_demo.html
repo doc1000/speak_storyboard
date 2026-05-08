@@ -297,6 +297,11 @@
 
     .panel:hover { transform: translateY(-2px); }
 
+    .panel.panel-few {
+      min-height: 0;
+      justify-content: flex-start;
+    }
+
     .step {
       font-size: 15px;
       color: var(--text-muted);
@@ -316,6 +321,16 @@
       object-fit: cover;
       max-height: 333px;
       margin: 10px 0;
+    }
+
+    .panel.panel-few .panel-img {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      object-position: center;
+      max-height: none;
+      max-width: 100%;
+      margin: 10px 0;
+      background: rgba(0, 0, 0, 0.12);
     }
 
     .activity-thumb {
@@ -407,7 +422,7 @@
       flex-direction: row;
       gap: 12px;
       overflow-x: auto;
-      padding: 10px 4px 14px;
+      padding: 2px 4px 10px;
       margin-bottom: 16px;
       scroll-snap-type: x mandatory;
     }
@@ -480,12 +495,25 @@
       font-weight: bold;
     }
 
-    .planner-title-row {
+    .planner-strip-row {
       display: flex;
-      justify-content: flex-end;
+      flex-direction: row;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 8px;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .planner-reset-btn {
+      flex: 0 0 auto;
+      align-self: center;
+      white-space: nowrap;
+    }
+
+    .planner-strip-row .history-strip {
+      flex: 1 1 auto;
+      min-width: 0;
+      margin-bottom: 0;
+      padding: 2px 4px 10px;
     }
 
     .small-button {
@@ -537,7 +565,7 @@
     }
 
     .slot {
-      min-height: 230px;
+      min-height: 332px;
       border: 2px dashed var(--slot-border);
       border-radius: 20px;
       padding: 14px;
@@ -566,8 +594,12 @@
 
     .slot .activity-card {
       width: auto;
-      min-height: 110px;
+      min-height: 232px;
       margin-bottom: 10px;
+    }
+
+    .slot .activity-thumb {
+      max-height: 192px;
     }
 
     @media (max-width: 820px) {
@@ -583,11 +615,14 @@
       #micBtn {
         width: 100%;
       }
-      .planner-title-row {
-        justify-content: stretch;
+      .planner-strip-row {
+        flex-wrap: wrap;
       }
-      .planner-title-row .small-button {
+      .planner-reset-btn {
         width: 100%;
+      }
+      .planner-strip-row .history-strip {
+        flex: 1 1 100%;
       }
       .phrase-history-row {
         flex-wrap: wrap;
@@ -679,11 +714,10 @@
 
       <div id="panelPlan" class="tab-panel" role="tabpanel" aria-labelledby="tabPlan" hidden>
         <section class="planner-card">
-          <div class="planner-title-row">
-            <button type="button" class="small-button" onclick="resetPlanner()">Reset Plan</button>
+          <div class="planner-strip-row">
+            <button type="button" class="small-button planner-reset-btn" onclick="resetPlanner()">Reset Plan</button>
+            <div id="historyStrip" class="history-strip"></div>
           </div>
-
-          <div id="historyStrip" class="history-strip"></div>
 
           <div class="slots">
             <div id="morningSlot" class="slot" ondragover="allowDrop(event)" ondragleave="leaveDrop(event)" ondrop="dropActivity(event, 'morningSlot')">
@@ -740,6 +774,12 @@
     }
 
     document.getElementById('phraseHistoryToggle').addEventListener('click', togglePhraseHistory);
+
+    document.getElementById('phraseInput').addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' || e.shiftKey) return;
+      e.preventDefault();
+      generateStoryboard();
+    });
 
     const RIBBON_LOCK_HOLD_MS = 1000;
     let ribbonLocked = false;
@@ -865,11 +905,12 @@
     function renderPanels(cards, dragContext) {
       const storyboard = document.getElementById('storyboard');
       const cols = Math.min(Math.max(cards.length, 1), 4);
+      const fewPanels = cards.length <= 2;
       storyboard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
       storyboard.innerHTML = '';
       cards.forEach((card, index) => {
         const div = document.createElement('div');
-        div.className = 'panel';
+        div.className = fewPanels ? 'panel panel-few' : 'panel';
         if (dragContext) {
           div.draggable = true;
           div.style.cursor = 'grab';
@@ -1100,9 +1141,14 @@
       const storyboard = document.getElementById('storyboard');
       storyboard.innerHTML = '';
 
+      const n = scenario.panels.length;
+      const cols = Math.min(Math.max(n, 1), 4);
+      const fewPanels = n <= 2;
+      storyboard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+
       scenario.panels.forEach((panel, index) => {
         const div = document.createElement('div');
-        div.className = 'panel';
+        div.className = fewPanels ? 'panel panel-few' : 'panel';
         div.innerHTML = `
           <div class="step">Step ${index + 1}</div>
           <div class="scene">${panel.emoji}</div>
