@@ -19,6 +19,9 @@ from flask import Flask, jsonify, request, send_from_directory
 
 from storyboard_planner_minimal import call_openai_structured, DEFAULT_SERVICE_PROMPT
 from gen_image_minimal import build_card_prompt, make_filename, save_image
+from dotenv import load_dotenv
+load_dotenv()
+
 
 BASE_DIR = Path(__file__).parent
 STORYBOARDS_JSON = BASE_DIR / "storyboards.json"
@@ -34,7 +37,7 @@ IMG_WIDTH = 1024
 IMG_HEIGHT = 1024
 IMG_STEPS = 4
 HISTORY_CAP = 50
-HISTORY_DISPLAY = 10
+HISTORY_DISPLAY = 30
 
 app = Flask(__name__, static_folder=None)
 

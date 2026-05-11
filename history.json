@@ -181,6 +181,502 @@
           "image_url": "/img/web/web_1778112566_c2_lunch-table-setting_c97b32a473.png"
         }
       ]
+    },
+    {
+      "source_id": "web_1778249156",
+      "original_text": "hey your daughter Janice is coming over for lunch today",
+      "simplified_message": "Daughter is visiting for lunch",
+      "created_at": 1778249168,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Daughter visiting",
+          "image_url": "/img/web/web_1778249156_c1_daughter-visiting_6f763e2235.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Lunch preparation",
+          "image_url": "/img/web/web_1778249156_c2_lunch-preparation_e78f96ca97.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249176",
+      "original_text": "What would you like for lunch? Soup or cottage cheese and peaches?",
+      "simplified_message": "Lunch choices: Soup or Cottage Cheese and Peaches",
+      "created_at": 1778249190,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Lunch Choices",
+          "image_url": "/img/web/web_1778249176_c1_lunch-choices_60392a8b67.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Soup",
+          "image_url": "/img/web/web_1778249176_c2_soup-choice_9d32e2a2fe.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "Cottage Cheese and Peaches",
+          "image_url": "/img/web/web_1778249176_c3_cottage-cheese-peaches-choice_46b6141ffb.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249211",
+      "original_text": "You can't drive the car gramma, but I can take you someplace after work.",
+      "simplified_message": "I will drive you after work.",
+      "created_at": 1778249228,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "caregiver and grandmother in car",
+          "image_url": "/img/web/web_1778249211_c1_caregiver-grandmother-car_af61eeb210.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "caregiver at work",
+          "image_url": "/img/web/web_1778249211_c2_caregiver-work_91e0b160b8.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "caregiver returning to grandmother",
+          "image_url": "/img/web/web_1778249211_c3_caregiver-returning_b37b2aa06c.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249260",
+      "original_text": "Its time for a walk before dinner",
+      "simplified_message": "Let's go for a walk before dinner.",
+      "created_at": 1778249274,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Caregiver and elder preparing for a walk",
+          "image_url": "/img/web/web_1778249260_c1_caregiver-older-adult-walk-ready_eb151bc6d6.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Caregiver and elder walking outside",
+          "image_url": "/img/web/web_1778249260_c2_caregiver-older-adult-walk-outside_813be0f4af.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249336",
+      "original_text": "where is the checkbook gramma.  we have to pay lawn mower.",
+      "simplified_message": "Where is the checkbook?",
+      "created_at": 1778249355,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Elderly woman searching.",
+          "image_url": "/img/web/web_1778249336_c1_elderly-woman-searching_5f0607a6c6.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Checkbook on table.",
+          "image_url": "/img/web/web_1778249336_c2_checkbook-on-table_356b4beab4.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "Lawn mower outside.",
+          "image_url": "/img/web/web_1778249336_c3_lawn-mower-outside_1176c163ed.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249392",
+      "original_text": "where is the checkbook gramma.  we have to pay the man who mowed the lawn.",
+      "simplified_message": "Find the checkbook and pay for lawn mowing.",
+      "created_at": 1778249409,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Caretaker asking for checkbook",
+          "image_url": "/img/web/web_1778249392_c1_checkbook-request_36b99f9f95.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Checkbook on table",
+          "image_url": "/img/web/web_1778249392_c2_checkbook-on-table_2b311729c1.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249431",
+      "original_text": "did you take your medications at noon?",
+      "simplified_message": "Show medication time",
+      "created_at": 1778249448,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Medication Reminder",
+          "image_url": "/img/web/web_1778249431_c1_medication-reminder_52d0026be8.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Taking Medications",
+          "image_url": "/img/web/web_1778249431_c2_taking-medications_d0c0e84ead.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "Empty Pill Organizer",
+          "image_url": "/img/web/web_1778249431_c3_empty-pill-organizer_9e594841ad.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249511",
+      "original_text": "I'm going to go get your Walker",
+      "simplified_message": "Caregiver retrieving walker",
+      "created_at": 1778249529,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Caregiver leaving for walker",
+          "image_url": "/img/web/web_1778249511_c1_caregiver-leaving_3b5a51b73a.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Caregiver with walker",
+          "image_url": "/img/web/web_1778249511_c2_caregiver-with-walker_ddfd49da57.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "Caregiver returning with walker",
+          "image_url": "/img/web/web_1778249511_c3_caregiver-returning_508a460c30.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249540",
+      "original_text": "your doctor's appointment is at 8:00 a.m. tomorrow",
+      "simplified_message": "doctor's appointment tomorrow",
+      "created_at": 1778249550,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "doctor's appointment reminder",
+          "image_url": "/img/web/web_1778249540_c1_doctors-appointment_48819983b0.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "appointment time",
+          "image_url": "/img/web/web_1778249540_c2_appointment-time_3046d78918.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249573",
+      "original_text": "8:00 a.m.",
+      "simplified_message": "It's morning.",
+      "created_at": 1778249578,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Morning time",
+          "image_url": "/img/web/web_1778249573_c1_morning-time_a57b50404a.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249742",
+      "original_text": "8:00 a.m.",
+      "simplified_message": "Time is 8:00 a.m.",
+      "created_at": 1778249747,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Digital Clock showing 8:00 a.m.",
+          "image_url": "/img/web/web_1778249742_c1_digital-clock-8am_2736fb9dff.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778249906",
+      "original_text": "we are going to go upstairs slowly",
+      "simplified_message": "moving upstairs",
+      "created_at": 1778249915,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "caregiver assisting elder",
+          "image_url": "/img/web/web_1778249906_c1_caregiver-assisting-elder_2ecc749c05.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "focus on stairs",
+          "image_url": "/img/web/web_1778249906_c2_stairs_78589d4811.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250027",
+      "original_text": "wait here while I go get the car",
+      "simplified_message": "Caregiver is leaving to get the car",
+      "created_at": 1778250038,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "caregiver leaving",
+          "image_url": "/img/web/web_1778250027_c1_caregiver-leaving_f47a9d427f.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "patient waiting",
+          "image_url": "/img/web/web_1778250027_c2_patient-waiting_c85e961d6c.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250058",
+      "original_text": "I'm getting the car",
+      "simplified_message": "Caregiver is taking the car.",
+      "created_at": 1778250066,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Caregiver next to car",
+          "image_url": "/img/web/web_1778250058_c1_caregiver-next-to-car_3345cb4246.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Caregiver getting inside car",
+          "image_url": "/img/web/web_1778250058_c2_caregiver-getting-inside-car_5e6d87bef5.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250239",
+      "original_text": "the neighbors are stopping by",
+      "simplified_message": "Neighbors Visiting",
+      "created_at": 1778250253,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Neighbors arriving",
+          "image_url": "/img/web/web_1778250239_c1_neighbors-arriving_3de3b828b9.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250285",
+      "original_text": "Bob and Nancy are stopping by in 10 minutes",
+      "simplified_message": "Visitors arriving soon",
+      "created_at": 1778250309,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Digital Clock Showing Ten Minutes",
+          "image_url": "/img/web/web_1778250285_c1_digital-clock-ten-minutes_e5278bcabd.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Doorway",
+          "image_url": "/img/web/web_1778250285_c2_doorway-waiting_2fd8566e20.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250348",
+      "original_text": "we're going to church tomorrow",
+      "simplified_message": "Going to church tomorrow",
+      "created_at": 1778250358,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Church Calendar",
+          "image_url": "/img/web/web_1778250348_c1_church-calendar_385d1bf51e.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Going to Church",
+          "image_url": "/img/web/web_1778250348_c2_going-to-church_d59b8fe796.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250382",
+      "original_text": "you can't drive grandma",
+      "simplified_message": "Driving is not safe for you, Grandma.",
+      "created_at": 1778250393,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Caregiver saying no driving",
+          "image_url": "/img/web/web_1778250382_c1_no-driving_fffb4d5c40.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Caregiver helping grandmother",
+          "image_url": "/img/web/web_1778250382_c2_assist-grandma_89ef75c24e.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250520",
+      "original_text": "you can't drive grandma",
+      "simplified_message": "You cannot drive.",
+      "created_at": 1778250532,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "No Driving",
+          "image_url": "/img/web/web_1778250520_c1_no-driving_57c9961132.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Caregiver Comfort",
+          "image_url": "/img/web/web_1778250520_c2_caregiver-comfort_17096ec589.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250568",
+      "original_text": "please use your walker",
+      "simplified_message": "Use the walker",
+      "created_at": 1778250572,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "walker with elderly person",
+          "image_url": "/img/web/web_1778250568_c1_walker-usage_00e96a3a9f.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250659",
+      "original_text": "do you want to watch willie nelson on youtube?",
+      "simplified_message": "Would you like to watch something?",
+      "created_at": 1778250670,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Watching video",
+          "image_url": "/img/web/web_1778250659_c1_watching-video_79c0da63e6.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Choice of video",
+          "image_url": "/img/web/web_1778250659_c2_choice-of-video_4b5d673e1f.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778250698",
+      "original_text": "willie nelson",
+      "simplified_message": "none",
+      "created_at": 1778250715,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "iconic singer",
+          "image_url": "/img/web/web_1778250698_c1_iconic-singer_78054379ed.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "performing on stage",
+          "image_url": "/img/web/web_1778250698_c2_performing-on-stage_1fb131f2c9.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778261460",
+      "original_text": "the neighbors are stopping by",
+      "simplified_message": "Neighbors visiting",
+      "created_at": 1778261481,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Neighbors arriving",
+          "image_url": "/img/web/web_1778261460_c1_neighbors-arriving_256cecdb18.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Greeting",
+          "image_url": "/img/web/web_1778261460_c2_greeting-neighbors_80507efb8f.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778261739",
+      "original_text": "you already took your",
+      "simplified_message": "You took your medicine.",
+      "created_at": 1778261756,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Medicine bottle with X",
+          "image_url": "/img/web/web_1778261739_c1_medicine-taken_175e1990cc.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Elderly person looking at caregiver",
+          "image_url": "/img/web/web_1778261739_c2_elderly-person-conversation_89188ac0a5.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778264261",
+      "original_text": "do you want soup or a sandwich for lunch?",
+      "simplified_message": "Lunch options: soup or sandwich",
+      "created_at": 1778264274,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Lunch Options",
+          "image_url": "/img/web/web_1778264261_c1_lunch-options_c02106f3f6.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Soup",
+          "image_url": "/img/web/web_1778264261_c2_soup_b0b5175647.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "Sandwich",
+          "image_url": "/img/web/web_1778264261_c3_sandwich_000818aa51.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778265709",
+      "original_text": "plumbers coming at noon we have to move to the office",
+      "simplified_message": "Move to the office for plumbers at noon",
+      "created_at": 1778265719,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Plumber Arrival Time",
+          "image_url": "/img/web/web_1778265709_c1_plumber-arrival-time_0881eae538.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Moving to Office",
+          "image_url": "/img/web/web_1778265709_c2_moving-to-office_7f41fd1548.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778514622",
+      "original_text": "deposit your Social Security",
+      "simplified_message": "Deposit Social Security",
+      "created_at": 1778514630,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "bank teller",
+          "image_url": "/img/web/web_1778514622_c1_bank-teller_b9808b45ed.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "check deposit",
+          "image_url": "/img/web/web_1778514622_c2_check-deposit_59d4b33d46.png"
+        }
+      ]
     }
   ]
 }

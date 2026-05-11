@@ -158,7 +158,7 @@ def main():
     parser.add_argument("--input-json", type=Path, required=True)
     parser.add_argument("--output-json", type=Path, required=True)
     parser.add_argument("--service-prompt-file", type=Path, default=None)
-    parser.add_argument("--model", type=str, default="gpt-4o-mini")
+    parser.add_argument("--model", type=str, default="gpt-4.1")
     parser.add_argument("--api-key", type=str, default=os.environ.get("OPENAI_API_KEY", ""))
     parser.add_argument("--batch-size", type=int, default=20)
     parser.add_argument("--temperature", type=float, default=None)
