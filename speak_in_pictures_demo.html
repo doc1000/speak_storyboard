@@ -833,7 +833,7 @@
           <div class="controls">
             <button type="button" id="micBtn" onclick="startSpeech()" title="Speak phrase">🎙</button>
             <div class="controls-grow">
-              <textarea id="phraseInput" rows="1" aria-label="Caregiver phrase">Gramma, we have to pay the lawn guy for mowing the lawn. Let's write a check for $50. Where is your checkbook?</textarea>
+              <textarea id="phraseInput" rows="1" aria-label="Caregiver phrase"></textarea>
             </div>
             <button type="button" class="btn-primary" onclick="generateStoryboard()">Make Storyboard</button>
             <button type="button" class="btn-secondary" onclick="searchPhrases()">Search</button>
@@ -1057,9 +1057,6 @@
         const data = await res.json();
         historyItems = data.items || [];
         buildHistoryChips();
-        if (historyItems.length > 0) {
-          renderFromHistory(historyItems[0]);
-        }
         renderHistoryStrip();
       } catch (e) {
         // Server not reachable — emoji fallback already shown by _generateStoryboardOffline()
@@ -1463,8 +1460,7 @@
       });
     }
 
-    _generateStoryboardOffline(); // immediate emoji fallback while history loads
-    loadHistory();               // async — renders gallery and real PNG cards when server responds
+    loadHistory();               // async — populates history chips and plan strip when server responds
 
     function startSpeech() {
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
