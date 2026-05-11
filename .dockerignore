@@ -1,0 +1,26 @@
+# Dev environment — never in image
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Git
+.git/
+.gitignore
+
+# Secrets — never bake into image; supplied via Fly secrets
+.env
+.env.*
+
+# Large local-only assets
+videos/
+
+# Docs and planning files — not needed at runtime
+implementation_plans/
+install.ps1
+caretaker flows.md
+service_prompt.md
+
+# NOTE: img/ is intentionally NOT excluded — seed images in img/v1-v11 and
+# previously generated img/web/ cards are baked into the image and later
+# copied to the Fly volume on first boot (Phase 3).
