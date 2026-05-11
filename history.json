@@ -582,6 +582,101 @@
           "image_url": "/img/web/web_1778250698_c2_performing-on-stage_1fb131f2c9.png"
         }
       ]
+    },
+    {
+      "source_id": "web_1778261460",
+      "original_text": "the neighbors are stopping by",
+      "simplified_message": "Neighbors visiting",
+      "created_at": 1778261481,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Neighbors arriving",
+          "image_url": "/img/web/web_1778261460_c1_neighbors-arriving_256cecdb18.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Greeting",
+          "image_url": "/img/web/web_1778261460_c2_greeting-neighbors_80507efb8f.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778261739",
+      "original_text": "you already took your",
+      "simplified_message": "You took your medicine.",
+      "created_at": 1778261756,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Medicine bottle with X",
+          "image_url": "/img/web/web_1778261739_c1_medicine-taken_175e1990cc.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Elderly person looking at caregiver",
+          "image_url": "/img/web/web_1778261739_c2_elderly-person-conversation_89188ac0a5.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778264261",
+      "original_text": "do you want soup or a sandwich for lunch?",
+      "simplified_message": "Lunch options: soup or sandwich",
+      "created_at": 1778264274,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Lunch Options",
+          "image_url": "/img/web/web_1778264261_c1_lunch-options_c02106f3f6.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Soup",
+          "image_url": "/img/web/web_1778264261_c2_soup_b0b5175647.png"
+        },
+        {
+          "card_index": 3,
+          "scene_label": "Sandwich",
+          "image_url": "/img/web/web_1778264261_c3_sandwich_000818aa51.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778265709",
+      "original_text": "plumbers coming at noon we have to move to the office",
+      "simplified_message": "Move to the office for plumbers at noon",
+      "created_at": 1778265719,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "Plumber Arrival Time",
+          "image_url": "/img/web/web_1778265709_c1_plumber-arrival-time_0881eae538.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "Moving to Office",
+          "image_url": "/img/web/web_1778265709_c2_moving-to-office_7f41fd1548.png"
+        }
+      ]
+    },
+    {
+      "source_id": "web_1778514622",
+      "original_text": "deposit your Social Security",
+      "simplified_message": "Deposit Social Security",
+      "created_at": 1778514630,
+      "cards": [
+        {
+          "card_index": 1,
+          "scene_label": "bank teller",
+          "image_url": "/img/web/web_1778514622_c1_bank-teller_b9808b45ed.png"
+        },
+        {
+          "card_index": 2,
+          "scene_label": "check deposit",
+          "image_url": "/img/web/web_1778514622_c2_check-deposit_59d4b33d46.png"
+        }
+      ]
     }
   ]
 }

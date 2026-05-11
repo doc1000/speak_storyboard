@@ -37,7 +37,7 @@ IMG_WIDTH = 1024
 IMG_HEIGHT = 1024
 IMG_STEPS = 4
 HISTORY_CAP = 50
-HISTORY_DISPLAY = 10
+HISTORY_DISPLAY = 30
 
 app = Flask(__name__, static_folder=None)
 
